@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+
+        <style>
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background: -webkit-gradient(linear, left top, right top, from(rgb(0, 119, 136)), to(rgb(7, 213, 213)));
+                height: 60px;
+                text-align: center;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <nav class="navbar navbar-light" style="background: -webkit-gradient(linear, left top, right top, from(rgb(0,119,136)), to(rgb(7,213,213)));">
+            <a class="navbar-brand" style="color: white" style="font-size: larger" href="/">PROCESSO SELETIVO ASCII</a>
+
+            <ul class="nav justify-content-end" style="font-size: larger">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="/quem-sou">QUEM SOU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="/habilidades">HABILIDADES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: white" href="/contato">CONTATO</a>
+                </li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+            <div class="footer" style="padding-top: 20px">
+                <a style="color: white" style="font-size: large" >Desenvolvido com<a/>
+                <img style="vertical-align: middle" alt="Heart Pic" src="{{'static/redheart.jpg'}}">
+                <a>por Roberto Branco</a>
+            </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

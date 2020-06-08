@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}Portfólio/Habilidades{% endblock %}
+{% block content %}
+    <body class="background">
+
+    <style>
+        .background{
+            background-color: black;
+        }
+        .img{
+            position: fixed;
+            left: 5%;
+        }
+        .img2{
+            position: fixed;
+            top: 17%;
+        }
+        h4{
+            position: fixed;
+            font-family: "Times New Roman";
+            color: white;
+            font-size: x-large;
+        }
+        h2{
+            position: fixed;
+            font-family: "Times New Roman";
+            margin-top: 50px;
+            font-size: x-large;
+            margin-left: 4%;
+            color: white;
+        }
+    </style>
+
+        <div>
+            <img class="img2" style="left: 70%" alt="CC Pic" src="{{ image2 }}" height="123" width="127">
+            <img class="img2" style="left: 85%" alt="CC Pic" src="{{ image3 }}" height="123" width="127">
+        </div>
+
+        <div>
+            <h2 style="top: 10%">Possuo nível intermediário em tecnologias como Python, C e Photoshop CS6.</h2>
+            <h2 style="top: 19%; left: 10px">Lido com edição de áudio e apresento leve conhecimento de HTML e CSS.</h2>
+            <h2 style="top: 28%; left: 7%">Além disso, domino inglês avançado(/fluente).</h2>
+        </div>
+
+
+        <div style="display: inline">
+            <h4 style="top: 63%; margin-left: 30%">Em python, uso com proeficiência bibliotecas<br>
+                como pygame, possuo familiaridade com tkinter,<br>
+                iniciante em Flask e, em breve, pretendo<br>
+                desenvolver Kivy.
+            </h4>
+            <img class="img" style="top: 60%" alt="Python Pic" src="{{ image1 }}" height="147" width="300">
+        </div>
+
+        <div style="color: darkred; position: fixed; top: 40%; left: 52%; padding: 10px; text-align: center; font-family: 'Fira Code Medium'">
+            <h3 style="font-size: x-large">Posso oferecer à ASCII, principalmente, total dedicação<br>aos afazeres fornecidos e comprometimento
+                com os demais integrantes, além da garantia de sempre buscar<br>o desenvolvimento do meu conhecimento junto à empresa
+            </h3>
+        </div>
+
+    </body>
+{% endblock %}

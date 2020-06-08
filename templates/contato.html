@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}Portfólio/Contato{% endblock %}
+{% block content %}
+
+    <body style="background-color: palevioletred;">
+        <style>
+            .insta{
+                position: fixed;
+                left: 200px;
+                top: 280px;
+                width: 160px;
+                height: 120px;
+            }
+            .img1{
+            position: fixed;
+            left: 220px;
+            height: 110px;
+            }
+            .img2{
+                position: fixed;
+                left: 70%;
+                height: 110px;
+            }
+            .links{
+                position: fixed;
+                left: 400px;
+                font-size: 40px;
+            }
+            .links2{
+                position: fixed;
+                left: 1200px;
+                font-size: 40px;
+            }
+            .links3{
+                position: fixed;
+                left: 1270px;
+                font-size: 40px;
+            }
+        </style>
+        <h1 style="text-align: center; font-size: 90px; color: darkslateblue">Contato</h1>
+
+        <a href="https://www.instagram.com/bettoh_fb/" target="_blank" class="links" style="top: 300px; color: white">
+            Instagram: @bettoh_fb
+        </a>
+
+        <a href="https://www.linkedin.com/in/roberto-branco-8a1462198/" target="_blank" class="links" style="top: 500px; color: blue">
+            LinkedIn: Roberto-Branco
+        </a>
+
+        <a class="links" style="top: 700px; color: deepskyblue">
+            e-mail: bebeto.fb@hotmail.com
+        </a>
+
+        <a href="https://twitter.com/RobertoBranco3" target="_blank" class="links2" style="top: 420px; color: darkturquoise">
+            Twitter: @RobertoBranco8
+        </a>
+
+        <a href="https://github.com/BeTToH?tab=repositories" target="_blank" class="links3" style="top: 720px; color: black">
+            GitHub: BeTToH
+        </a>
+
+        <image class="insta" alt="Instagram" src="{{ image1 }}">
+        <image class="img1" style="top: 680px; width: 110px" alt="e-mail" src="{{ image2 }}">
+        <image class="img1" style="top: 480px; width: 110px" alt="LinkedIn" src="{{ image3 }}">
+        <image class="img2" style="top: 280px; width: 130px; height: 100px" alt="Twitter" src="{{ image5 }}">
+        <image class="img2" style="top: 570px; width: 130px; height: 130px" alt="Twitter" src="{{ image4 }}">
+
+    </body>
+{% endblock %}
